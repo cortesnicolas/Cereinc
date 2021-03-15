@@ -1,0 +1,16 @@
+@import "abstract/variables";
+
+@import "base/base";
+@import "base/utilities";
+@import "base/typography";
+
+@import "components/slides";
+@import "components/info";
+@import "components/forms";
+@import "components/jcarousel";
+
+@import "layout/footer";
+
+@import "pages/home";
+
+@import "../node_modules/bootstrap/scss/bootstrap";

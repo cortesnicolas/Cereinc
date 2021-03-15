@@ -1,0 +1,32 @@
+.u-separator {
+  border-left: 1px solid lightgray;
+  margin-left: 15px;
+  height: 75px;
+  margin-top: 2rem;
+}
+
+// Radius
+.u-radius-small {
+  border-radius: 1rem !important;
+}
+.u-radius-medium {
+  border-radius: 2rem !important;
+}
+.u-radius-big {
+  border-radius: 4rem !important;
+}
+
+// Opacity
+.u-opacity-small {
+  opacity: 0.9 !important;
+}
+
+// Gradiantes
+.gradient-primary-light {
+  background-image: linear-gradient(to right bottom, $primary, $blue-light);
+}
+
+.gradient-secondary-light {
+  background-image: linear-gradient(to right bottom, $warning, $blue-light);
+}
+

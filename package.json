@@ -1,0 +1,19 @@
+{
+  "name": "cereinc",
+  "version": "1.0.0",
+  "description": "centro de terapia",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Nicolas",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.0.0-beta2",
+    "nodemailer": "^6.5.0"
+  }
+}
