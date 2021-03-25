@@ -47,22 +47,12 @@ $(document).ready(function () {
     });
   })(jQuery);
 
-  showSlides();
+  $(".slider").bxSlider({
+    auto: true,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: false,
+    responsive: true,
+    slideWidth: 2000
+  });
 });
-
-var slideIndex = 0;
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-
-  slideIndex++;
-
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 1500); // Change image every 2 seconds
-}

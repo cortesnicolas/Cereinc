@@ -5,9 +5,6 @@
   padding: 0;
   box-sizing: inherit; }
 
-html {
-  font-size: 62.5%; }
-
 body {
   box-sizing: border-box; }
 
@@ -44,38 +41,6 @@ body {
   text-align: center;
   margin-top: 1rem; }
 
-.mySlides {
-  display: none; }
-
-.mySlidesimg {
-  vertical-align: middle;
-  width: 100% !important;
-  height: 70rem !important; }
-
-.slideshow-container {
-  max-width: 100%;
-  position: sticky;
-  margin: auto; }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: .9s;
-  animation-name: fade;
-  animation-duration: .9s; }
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.7; }
-  to {
-    opacity: 1; } }
-
-@keyframes fade {
-  from {
-    opacity: 0.7; }
-  to {
-    opacity: 1; } }
-
 .box-social {
   text-decoration: none; }
   .box-social__icon-1 {
@@ -84,57 +49,6 @@ body {
   .box-social__icon-2 {
     color: blue;
     font-size: 25px; }
-
-.forms__group {
-  position: relative;
-  padding: 15px 0 0;
-  margin-top: 10px;
-  width: 50%; }
-
-.form__field {
-  font-family: inherit;
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid #29999a;
-  outline: 0;
-  font-size: 2rem;
-  color: #29999a;
-  padding: 7px 0;
-  background: transparent;
-  transition: border-color 0.3s; }
-  .form__field::placeholder {
-    color: transparent; }
-  .form__field:placeholder-shown ~ .form__label {
-    font-size: 2rem;
-    cursor: text;
-    top: 20px; }
-
-.form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.3s;
-  font-size: 2rem;
-  color: #29999a; }
-
-.form__field:focus {
-  padding-bottom: 6px;
-  font-weight: 100;
-  border-width: 3px;
-  border-image: linear-gradient(to right, #29999a, #3a5e80);
-  border-image-slice: 1; }
-  .form__field:focus ~ .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.3s;
-    font-size: 1rem;
-    color: #29999a;
-    font-weight: 100; }
-
-/* reset input */
-.form__field:required, .form__field:invalid {
-  box-shadow: none; }
 
 /*
 This is the visible area of you carousel.
