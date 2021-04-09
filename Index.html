@@ -7,11 +7,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./img/logo-fondo-transparente.png" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
-    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
@@ -42,6 +39,14 @@
               target="_blank"
             >
               <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              class="text-decoration-none box-social__icon-3 col-sm-6 col-md-6 col-lg-6"
+              href="https://www.youtube.com/channel/UCNmEOu5Hj7v393Z1JggFeyQ"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
             </a>
           </div>
         </div>
@@ -143,23 +148,22 @@
       </section>
 
       <!-- Presentacion de la pagina (slider) -->
-      <section class="container-fluid p-0">
-        <div class="card">
-          <div class="text-center">
-            <div class="slider">
-              <div>
-                <img src="/img/slider/slider-1.jpeg" />
-              </div>
-              <div>
-                <img src="/img/slider/slider-2.jpeg" />
-              </div>
-              <div>
-                <img src="/img/slider/slider-3.jpeg" />
-              </div>
-              <div>
-                <img src="/img/slider/slider-4.jpeg" />
-              </div>
-            </div>
+      <section class="slideshow-container">
+        <div class="slideshow-inner">
+          <div class="mySlides">
+            <img src="./img/slider/slider-1.jpeg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="./img/slider/slider-2.jpeg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="./img/slider/slider-3.jpeg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="./img/slider/slider-4.jpeg" style="width: 100%" />
           </div>
         </div>
       </section>
@@ -167,7 +171,7 @@
       <!-- Card Padre -->
       <section
         class="p-0 p-sm-5 p-md-5 p-lg-5 p-xl-5 bg-light"
-        style="margin-top: -250px"
+        style="margin-top: -100px"
       >
         <div class="container">
           <div
@@ -194,28 +198,95 @@
                       class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 p-0 p-sm-5"
                     >
                       <form>
-                        <div class="row">
-                          <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Nombre Completo</span>
-                            <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="mb-3 row">
+                          <label
+                            for="nombre"
+                            class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-form-label"
+                            >Nombre</label
+                          >
+                          <div
+                            class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10"
+                          >
+                            <input
+                              id="nombre"
+                              type="text"
+                              class="form-control"
+                              placeholder="Nombre"
+                              aria-label="Username"
+                              aria-describedby="basic-addon1"
+                            />
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Email</span>
-                            <input id="email" type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="mb-3 row">
+                          <label
+                            for="email"
+                            class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-form-label"
+                            >Email</label
+                          >
+                          <div
+                            class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10"
+                          >
+                            <input
+                              id="email"
+                              type="text"
+                              class="form-control"
+                              placeholder="Email"
+                              aria-label="Username"
+                              aria-describedby="basic-addon1"
+                            />
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Asunto</span>
-                            <input id="asunto" type="text" class="form-control" placeholder="Asunto" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="mb-3 row">
+                          <label
+                            for="asunto"
+                            class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-form-label"
+                            >Asunto</label
+                          >
+                          <div
+                            class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10"
+                          >
+                            <input
+                              id="asunto"
+                              type="text"
+                              class="form-control"
+                              placeholder="Asunto"
+                              aria-label="Username"
+                              aria-describedby="basic-addon1"
+                            />
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Mensaje</span>
-                            <input id="mensaje" type="text" class="form-control" placeholder="Mensaje" aria-label="Username" aria-describedby="basic-addon1">
+                        <div class="mb-3 row">
+                          <label
+                            for="fono"
+                            class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-form-label"
+                            >Fono</label
+                          >
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                            <input
+                              id="fono"
+                              type="text"
+                              class="form-control"
+                              placeholder="Telefono de contacto"
+                              aria-label="Username"
+                              aria-describedby="basic-addon1"
+                            />
+                          </div>
+                        </div>
+                        <div class="mb-4 row">
+                          <label
+                            for="mensaje"
+                            class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-form-label"
+                            >Mensaje</label
+                          >
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                            <textarea 
+                              id="mensaje"
+                              type="text"
+                              class="form-control"
+                              placeholder="Mensaje"
+                              aria-label="Username"
+                              aria-describedby="basic-addon1"
+                            ></textarea> 
                           </div>
                         </div>
                         <div class="mt-1 text-center">
@@ -402,11 +473,10 @@
                             ADOS-2
                           </h3>
                           <p class="pt-4 text-secondary">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Saepe cum cumque corporis repellat consectetur
-                            eaque! Dolor deleniti quae, voluptatibus ex natus
-                            illo unde, fugiat assumenda laboriosam, ipsa nulla
-                            distinctio repellendus!
+                            Evaluación observacional del diagnóstico de autismo:
+                            evaluación realizada en consulta con todos los
+                            implementos necesarios y las medidas de seguridad,
+                            entre 2 a 3 sesiones con entrega de informe final.
                           </p>
                         </div>
                       </div>
@@ -432,11 +502,11 @@
                             Visitas Educacionales
                           </h3>
                           <p class="pt-4 text-secondary">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Saepe cum cumque corporis repellat consectetur
-                            eaque! Dolor deleniti quae, voluptatibus ex natus
-                            illo unde, fugiat assumenda laboriosam, ipsa nulla
-                            distinctio repellendus!
+                            Realizadas a los colegios/jardines o
+                            establecimientos educacionales en general para
+                            generar una evaluación completa del ámbito
+                            educativo, con entrega de adecuación e informe
+                            final.
                           </p>
                         </div>
                       </div>
@@ -471,9 +541,7 @@
                       data-aos-once="false"
                       class="col-sm-12 col-md-12 col-lg-8 pt-5"
                     >
-                      <h3 class="fw-normal text-dark fw-bold">
-                        Consulta
-                      </h3>
+                      <h3 class="fw-normal text-dark fw-bold">Consulta</h3>
                       <p class="text-secondary">
                         Atención en nuestra consulta cercana a metro tobalaba,
                         contamos con todos los implementos de seguridad
@@ -525,9 +593,7 @@
                       data-aos-once="false"
                       class="col-sm-12 col-md-12 col-lg-8 pt-5"
                     >
-                      <h3 class="fw-normal text-dark fw-bold">
-                        Domicilio
-                      </h3>
+                      <h3 class="fw-normal text-dark fw-bold">Domicilio</h3>
                       <p class="text-secondary">
                         Atención en la comodidad de su hogar con todos los
                         elementos de protección personal de nuestros
@@ -548,9 +614,7 @@
                       data-aos-once="false"
                       class="col-sm-12 col-md-12 col-lg-8"
                     >
-                      <h3 class="fw-normal text-dark fw-bold">
-                        Tele Terapia
-                      </h3>
+                      <h3 class="fw-normal text-dark fw-bold">Tele Terapia</h3>
                       <p class="text-secondary">
                         Atención a distancia para quienes estén en comunas donde
                         no acceden a servicios de salud especializados,
@@ -624,9 +688,7 @@
                               alt="Image 3"
                             />
                             <h3>Valentina Casanovas</h3>
-                            <h4 class="text-secondary">
-                              Fonoaudióloga
-                            </h4>
+                            <h4 class="text-secondary">Fonoaudióloga</h4>
                           </li>
                           <li>
                             <img
@@ -635,9 +697,7 @@
                               alt="Image 3"
                             />
                             <h3>Karla Martínez</h3>
-                            <h4 class="text-secondary">
-                              Fonoaudióloga
-                            </h4>
+                            <h4 class="text-secondary">Fonoaudióloga</h4>
                           </li>
                           <li>
                             <img
@@ -708,9 +768,7 @@
                               alt="Image 2"
                             />
                             <h3>Beatriz Rozas</h3>
-                            <h4 class="text-secondary">
-                              Fonoaudióloga
-                            </h4>
+                            <h4 class="text-secondary">Fonoaudióloga</h4>
                           </li>
                         </ul>
                       </div>
@@ -763,8 +821,8 @@
     <script>
       AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="./js/email.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="module" src="./js/email.js"></script>
     <script src="./js/jquery.jcarousel.js"></script>
     <script src="./js/index.js"></script>
   </body>

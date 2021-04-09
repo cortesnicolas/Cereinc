@@ -41,6 +41,18 @@ body {
   text-align: center;
   margin-top: 1rem; }
 
+.slideshow-container {
+  width: 100%;
+  position: relative; }
+
+.mySlides {
+  display: none;
+  height: 500px; }
+
+.mySlides img {
+  height: 100%;
+  max-height: 100%; }
+
 .box-social {
   text-decoration: none; }
   .box-social__icon-1 {
@@ -48,6 +60,9 @@ body {
     font-size: 25px; }
   .box-social__icon-2 {
     color: blue;
+    font-size: 25px; }
+  .box-social__icon-3 {
+    color: Red;
     font-size: 25px; }
 
 /*
